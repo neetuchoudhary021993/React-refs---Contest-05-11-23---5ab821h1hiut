@@ -12,11 +12,15 @@ const App = () => {
     e.preventDefault();
     if(email.trim() === ''){
       emailRef.current.focus();
-      return;
+    
     }
       else if(password.trim() === ''){
       passwordRef.current.focus();
-      return;
+     
+    }
+    else {
+      setEmail('')
+      setPassword('')
     }
   }
   return (
