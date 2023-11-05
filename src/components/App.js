@@ -14,7 +14,7 @@ const App = () => {
       emailRef.current.focus();
       return;
     }
-      if(password.trim() === ''){
+      else if(password.trim() === ''){
       passwordRef.current.focus();
       return;
     }
